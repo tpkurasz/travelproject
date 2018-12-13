@@ -1,0 +1,62 @@
+Inputs:
+    -Starting city IATA airport code
+    -Ending city IATA airport code
+    -Travel date
+
+
+Outputs:
+    -Flight fare history link
+    -Current flight fare link
+    -Airport terminal map link
+    -Uber fare estimator link
+    -Map between current and final destination
+    
+
+Algorithm:
+    -import webbrowser
+    -import folium
+    -import pandas
+    -import warnings
+    -define function with manipulated fare history link
+    -define function with manipulated current fare link
+    -define function with manipulated terminal map link
+    -define function for uber
+    -define function to print links manipulated by user input
+    -define function for creating map between two airports
+    -print title
+    -ask user if they want to look at fare history
+    -if yes,
+        -print link to show airport codes
+        -ask user for their starting airport code
+        -ask user for their ending airport code
+        -send user to history link
+        -ask user if they want to look at current flight fares
+        -if yes,
+            -ask user to input date of travel
+            -send user to current fare link
+            -ask user if they want to see the airport terminal map
+            -if yes,
+                -send user to terminal map link
+                -ask user if they need a ride to the airport
+                -if yes,
+                    -print link to Uber
+    -print all links
+    -break
+    -if no,
+        -ask user if they want to look at current flight fares
+        -if yes,
+            -ask user to input date of travel
+            -send user to current fare link
+            -ask user if they want to see the airport terminal map
+            -if yes,
+                -send user to terminal map link
+                -ask user if they need a ride to the airport
+                -if yes,
+                    -print link to Uber
+           -print all links
+           -break
+         -if no,
+             -print message about apologizing for not being able to help
+    -if the user enters something other than yes or no,
+        -Print there has been an error, try again
+-print map
